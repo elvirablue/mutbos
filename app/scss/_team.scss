@@ -1,0 +1,118 @@
+.team {
+  padding: 90px 0;
+  h2 {
+    display: block;
+    margin: 0 0 0 auto;
+    text-align: right;
+    max-width: max-content;
+    .t1 {
+      padding-top: 5px;
+      letter-spacing: normal;
+      font-size: 20px;
+      color: rgb(26, 26, 26);
+      font-family: "Roboto", sans-serif;
+      text-transform: none;
+    }
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 90px 20px;
+  }
+  .item {
+    text-align: center;
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 244px;
+      height: 244px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #1a1a1a;
+    }
+    .t1 {
+      padding-top: 40px;
+      font-size: 20px;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      span {
+        display: block;
+        color: inherit;
+        font: inherit;
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+      .t1 {
+        color: #000000;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .item {
+      .img {
+        width: 18vw;
+        height: 18vw;
+        min-width: 100px;
+        min-height: 100px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+    h2 {
+      max-width: 50vw;
+      .t1 {
+        font-size: 16px;
+      }
+    }
+    .item {
+      .t1 {
+        font-size: 18px;
+        padding-top: 3vw;
+      }
+      &:nth-child(3),
+      &:nth-child(4) {
+        .t1 {
+          color: #ffffff;
+        }
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 0;
+    .row {
+      padding: 50px 0;
+      justify-content: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .item {
+      padding: 0 20px 30px;
+      width: 160px;
+      .img {
+        min-width: 120px;
+        min-height: 120px;
+      }
+      .t1 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .item {
+      padding: 0 10px 30px;
+      width: 140px;
+    }
+  }
+}

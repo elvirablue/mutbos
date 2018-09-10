@@ -1,0 +1,145 @@
+.menu {
+  padding: 80px 15px;
+
+  h2 {
+    max-width: 800px;
+    text-align: left;
+    padding-bottom: 55px;
+  }
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .slider-block {
+    max-width: 730px;
+    margin: 0 20px;
+  }
+  .text-block {
+    max-width: 430px;
+    padding: 10px 0 0 30px;
+    .title {
+      font-size: 26px;
+      color: #ffffff;
+      font-family: "Hagin Caps", serif;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    .t1 {
+      display: block;
+      padding-top: 25px;
+      font-size: 14px;
+      line-height: 1.8;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      color: #f9f9f9;
+      &:nth-child(4) {
+        padding-top: 30px;
+        padding-right: 30px;
+      }
+    }
+    ul.t1 {
+      padding: 0;
+      margin: 0;
+      list-style-position: inside;
+      list-style-type: disc;
+      > li {
+        padding-top: 0;
+        font: inherit;
+        color: inherit;
+
+      }
+    }
+    .button {
+      margin-top: 40px;
+      width: 290px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .slider-block {
+      max-width: 55vw;
+    }
+    h2 {
+      max-width: 60vw;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 15px 60px;
+
+    h2 {
+      padding-bottom: 15px;
+    }
+    .slider-block {
+      padding-top: 50px;
+    }
+    .text-block {
+      padding: 0 0 0 20px;
+      .button {
+        margin-left: -2vw;
+      }
+      .title {
+        font-size: 22px;
+        line-height: 1.2;
+      }
+      .t1 {
+        padding-top: 15px;
+        line-height: 1.4;
+        &:nth-child(4) {
+          padding-top: 20px;
+          padding-right: 20px;
+        }
+      }
+      ul.t1 {
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 80px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 40px 15px 20px;
+    h2 {
+      max-width: 100%;
+      text-align: center;
+    }
+    .row {
+      flex-flow: column nowrap;
+    }
+    .slider-block {
+      width: 70vw;
+      max-width: 400px;
+      margin: 0 auto 30px;
+      padding-top: 20px;
+    }
+    .text-block {
+      padding: 0 15px;
+      margin: 0 auto 30px;
+      text-align: center;
+      .title {
+        font-size: 18px;
+      }
+      .button {
+        width: 100%;
+        max-width: 280px;
+      }
+      ul.t1  {
+        text-align: left;
+        margin-left: 30px;
+      }
+      * {
+        color: #000000 !important;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    padding: 40px 0 20px;
+    .slider-block {
+      width: 90vw;
+      max-width: 90vw;
+    }
+  }
+
+}

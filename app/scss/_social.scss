@@ -1,0 +1,26 @@
+.social {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: 0.2s ease all;
+  margin: 0;
+  background-size: 35px auto;
+  &.inst {
+    background-image: url("../img/ico/i-inst.svg");
+  }
+  &.vk {
+    background-image: url("../img/ico/i-vk.svg");
+
+  }
+  &.mail {
+    background-image: url("../img/ico/i-mail.svg");
+  }
+  @include media-breakpoint-down(xs) {
+    width: 40px;
+    height: 40px;
+    background-size: 28px auto;
+  }
+}

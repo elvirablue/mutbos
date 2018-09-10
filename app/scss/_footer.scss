@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  border-top: 1px solid #fff;
+
+  .logo {
+   width: 160px;
+  }
+  .contacts {
+    text-align: right;
+  }
+  .link {
+    display: block;
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0;
+    .logo {
+      width: 120px;
+    }
+    .link {
+      font-size: 18px;
+    }
+
+  }
+  @include media-breakpoint-down(xs) {
+    .logo {
+      width: 100px;
+    }
+  }
+}

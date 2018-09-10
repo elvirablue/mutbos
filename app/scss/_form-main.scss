@@ -1,0 +1,65 @@
+.form-main {
+  padding: 170px 0 110px;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    text-align: center;
+    color: #ffffff;
+  }
+  .t1 {
+    color: #ffffff;
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  .user-input {
+    width: 370px;
+  }
+  .button {
+    display: flex;
+    width: 290px;
+    margin: 0 auto 0 0;
+  }
+  .row {
+    padding: 80px 30px 0;
+    .user-input {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .user-input {
+      width: 100%;
+    }
+    .button {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 90px 0 70px;
+    .t1 {
+      font-size: 18px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0 50px;
+    .row {
+      padding: 30px 0 0;
+    }
+    .user-input, .button {
+      max-width: 450px;
+    }
+
+  }
+  @include media-breakpoint-down(xs) {
+    .t1 {
+      font-size: 16px;
+    }
+
+  }
+}

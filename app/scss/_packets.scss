@@ -1,0 +1,120 @@
+.packets {
+  padding: 85px 0 50px;
+  h2 {
+    padding-bottom: 40px;
+  }
+
+  .row {
+    padding-top: 20px;
+  }
+
+  .button {
+    width: 290px;
+    margin: 35px auto 30px;
+  }
+  .text {
+    font-size: 14px;
+    color: rgb(249,249,249);
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
+
+  .item {
+    display: block;
+    height: 100%;
+    max-width: 550px;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    .title {
+      font-size: 28px;
+      color: #fbc100;
+      font-family: "Hagin Caps", serif;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px 0 25px;
+      margin-bottom: 20px;
+      background: url("../img/format-title-decor.png") bottom center no-repeat;
+    }
+    .t1 {
+      font-size: 22px;
+      color: #ffffff;
+      font-family: "Hagin Caps", serif;
+      text-align: center;
+      padding: 0 15%;
+    }
+    ul.t2 {
+      font-size: 14px;
+      line-height: 1.2;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      padding: 0;
+      margin: 0 0 10px 0;
+      list-style-position: inside;
+      > li {
+        color: inherit;
+        font: inherit;
+      }
+    }
+    .t3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      //padding-left: 5px;
+    }
+    .t4 {
+      text-align: center;
+      font-size: 14px;
+      color: #ffffff;
+      font-family: "Roboto", sans-serif;
+      padding-bottom: 20px;
+      > b {font-size: 18px;}
+    }
+  }
+  @include media-breakpoint-down(lg) {
+
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 0 20px;
+    h2 {
+      padding-bottom: 10px;
+    }
+    .col-12 {
+      margin-bottom: 30px;
+    }
+    .item {
+      margin: 0 auto;
+      height: auto;
+      .t1 {
+        font-size: 20px;
+      }
+      .title {
+        font-size: 24px;
+        padding-bottom: 20px;
+        background-size: 130px auto;
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(sm) {
+    .item {
+      padding: 20px 10px;
+      .t1 {
+        font-size: 18px;
+      }
+      .title {
+        font-size: 22px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+  }
+}

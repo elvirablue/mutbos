@@ -1,0 +1,70 @@
+.gets {
+  padding: 60px 0 0;
+
+  h2 {
+    max-width: 800px;
+  }
+  .row {
+    padding: 90px 0 20px 20px;
+  }
+
+  .item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 50px 40px;
+    .number {
+      display: block;
+      width: 80px;
+      text-align: center;
+      font-size: 100px;
+      line-height: 1;
+      color: #fbc100;
+      font-family: "Hagin Caps", serif;
+      padding-right: 40px;
+    }
+    .t1 {
+      font-size: 14px;
+      line-height: 1.5;
+      color: rgb(249,249,249);
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      padding-top: 5px;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .row {
+      padding: 90px 0 20px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .row {
+      padding: 60px 0 20px;
+    }
+    .item {
+      padding: 0 20px 30px;
+      .number {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+  }
+
+  @include media-breakpoint-down(xs) {
+    .item {
+      max-width: 350px;
+      margin: 0 auto;
+      .number {
+        font-size: 50px;
+      }
+      .t1 {
+        padding-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.bg-1 {
+  min-height: 940px;
+  background: url("../img/bg/bg-1.jpg") top center no-repeat;
+  background-size: auto;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+  }
+  @include media-breakpoint-down(md) {
+    background-size: cover;
+
+  }
+  @include media-breakpoint-down(sm) {
+    background-position: -480px bottom;
+  }
+}
+.bg-2 {
+  background: #1a1a1a;
+  position: relative;
+  .decor {
+    position: absolute;
+    top: -160px;
+    left: 50%;
+    margin-left: -960px;
+  }
+  @include media-breakpoint-down(lg) {
+  }
+  @include media-breakpoint-down(md) {
+
+  }
+  @include media-breakpoint-down(sm) {
+
+  }
+}
+
+
+.bg-3 {
+  min-height: 925px;
+  background: url("../img/bg/bg-3.png") bottom center no-repeat #1a1a1a;
+  background-size: auto;
+  position: relative;
+  .decor {
+    position: absolute;
+    top: -70px;
+    right: 50%;
+    margin-right: -960px;
+  }
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+    background-size: cover;
+  }
+  @include media-breakpoint-down(md) {
+    background-size: 1900px auto;
+
+  }
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+    background-position: -450px bottom;
+  }
+}
+
+.bg-4 {
+  min-height: 1200px;
+  background: url("../img/bg/bg-star-1.png") bottom center no-repeat #1a1a1a;
+  background-size: auto;
+  position: relative;
+  .decor {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    margin-left: -840px;
+  }
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+    background-size: cover;
+  }
+  @include media-breakpoint-down(md) {
+
+  }
+  @include media-breakpoint-down(sm) {
+
+  }
+}
+
+.bg-5 {
+  min-height: 1000px;
+  background: url("../img/bg/bg-5.jpg") top center no-repeat;
+  background-size: auto;
+  position: relative;
+  .decor-1 {
+    position: absolute;
+    top: -120px;
+    right: 50%;
+    margin-right: -980px;
+  }
+ .decor-2 {
+   position: absolute;
+   bottom: -20px;
+   right: 50%;
+   margin-right: -900px;
+}
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+    background-size: cover;
+  }
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+    background-position: 45% top;
+  }
+}
+.bg-6 {
+  min-height: 1066px;
+  background: url("../img/bg/bg-6.jpg") top center no-repeat;
+  background-size: auto;
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+    background-size: cover;
+  }
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+  }
+}
+.bg-7 {
+  min-height: 670px;
+  background: url("../img/bg/bg-7.png") bottom center no-repeat #1a1a1a;
+  background-size: auto;
+  position: relative;
+  .decor {
+    position: absolute;
+    top: -330px;
+    left: 50%;
+    margin-left: -960px;
+  }
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+    background-size: cover;
+  }
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+    background-position: 45% top;
+  }
+}
+
+.bg-8 {
+  min-height: 783px;
+  background: url("../img/bg/bg-8.png") top center no-repeat #1a1a1a;
+  background-size: auto;
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+    background-size: cover;
+  }
+  @include media-breakpoint-down(sm) {
+  }
+}
+
+
+.bg-9-10 {
+  min-height: 800px;
+  background: url("../img/bg/bg-9.png") top left no-repeat #1a1a1a;
+  background-size: auto 555px;
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+  }
+  @include media-breakpoint-down(sm) {
+    background-size: cover;
+  }
+}
+

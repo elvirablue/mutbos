@@ -1,0 +1,199 @@
+.formats {
+  padding: 80px 0 40px;
+  h2 {
+    padding-bottom: 60px;
+  }
+  .nav-tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 50px;
+    border: none;
+    .nav-link {
+      flex: 1 1 25%;
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 100px auto;
+      background-position: top center;
+      padding: 105px 0 0;
+      font-size: 28px;
+      font-family: "Hagin Caps", serif;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.2;
+      color: #ffffff;
+      transition: all 0.2s ease;
+      &:nth-child(1) {
+        background-image: url("../img/f1.svg");
+      }
+      &:nth-child(2) {
+        background-image: url("../img/f2.svg");
+      }
+      &:nth-child(3) {
+        background-image: url("../img/f3.svg");
+      }
+      &:nth-child(4) {
+        background-image: url("../img/f4.svg");
+      }
+      &:hover, &.active {
+        color: #fbc100;
+        &:nth-child(1) {
+          background-image: url("../img/f1-active.svg");
+        }
+        &:nth-child(2) {
+          background-image: url("../img/f2-active.svg");
+        }
+        &:nth-child(3) {
+          background-image: url("../img/f3-active.svg");
+        }
+        &:nth-child(4) {
+          background-image: url("../img/f4-active.svg");
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 90px 20px 50px;
+    .item {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      img {
+        display: block;
+        flex: auto;
+        max-width: none;
+      }
+      .text {
+        flex: 0 1 100%;
+        padding: 10px 0 0 50px;
+        ul.t1 {
+          margin: 0 0 20px 20px;
+          font-size: 24px;
+          line-height: 1.3;
+          color: rgb(249, 249, 249);
+          font-family: "Roboto", sans-serif;
+          > li {
+            color: inherit;
+            font: inherit;
+            padding-bottom: 35px;
+            * {
+              color: inherit;
+              font: inherit;
+              font-size: 0.7em;
+            }
+          }
+        }
+        .t2 {
+          padding: 25px 0 0 20px;
+          font-size: 16px;
+          line-height: 1;
+          color: rgb(249, 249, 249);
+          font-family: "Roboto", sans-serif;
+        }
+      }
+      .button {
+        width: 290px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .nav-tabs {
+      padding: 0 20px;
+    }
+    .tab-content {
+      .item {
+        img {
+          max-width: 60%;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 40px 20px 20px;
+    h2 {
+      padding-bottom: 30px;
+    }
+    .nav-tabs {
+      padding: 0;
+      .nav-link {
+        background-size: 10vw auto;
+        padding-top: 11vw;
+        font-size: 22px;
+      }
+    }
+    .tab-content {
+      padding: 30px 20px;
+      .item {
+        .text {
+          text-align: center;
+
+          ul.t1 {
+            font-size: 20px;
+            list-style-position: inside;
+            > li {
+              padding-bottom: 15px;
+            }
+          }
+          .t2 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0 20px;
+    .nav-tabs {
+      .nav-link {
+        font-size: 20px;
+        background-size: 60px auto;
+        padding-top: 65px;
+      }
+    }
+    .tab-content {
+      padding: 30px 0;
+      .item {
+        flex-flow: column nowrap;
+        align-items: center;
+        img {
+          width: 100%;
+          max-width: 400px;
+          margin-bottom: 20px;
+        }
+        .text {
+          padding-left: 0;
+          ul.t1, .button {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .nav-tabs {
+      flex-flow: row wrap;
+      justify-content: center;
+      .nav-link {
+        flex: 1 1 35%;
+        max-width: 180px;
+        padding-bottom: 20px;
+      }
+    }
+    .tab-content .item .text {
+      ul.t1 {
+        font-size: 16px;
+        > li {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
